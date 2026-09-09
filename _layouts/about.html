@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About · {{ site.title }}</title>
+
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="site-header">
+        <nav class="navigation">
+
+            <a href="{{ '/' | relative_url }}" class="logo">
+                JAMIE LIAN
+                <span class="logo-dot"></span>
+            </a>
+
+            <div class="nav-links">
+                <a href="{{ '/' | relative_url }}">
+                    HOME
+                </a>
+
+                <a href="{{ '/resume' | relative_url }}">
+                    RESUME
+                </a>
+
+                <a href="{{ '/about' | relative_url }}" class="active">
+                    ABOUT
+                </a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <main class="about-page">
+
+        <!-- PAGE INTRO -->
+        <section class="about-intro page-intro">
+
+            <p class="eyebrow">
+                GET TO KNOW ME
+            </p>
+
+            <h1>
+
+                <span>Who is Jamie Lian?</span>
+            </h1>
+
+            <p class="about-intro-text">
+                I've lived in Bloomington, Indiana since I was 6 years old! Outside of
+                school or work, I'm usually in the kitchen cooking, riding my bike, or watching tennis (all at
+                once, of course).
+
+            </p>
+
+        </section>
+
+
+        <!-- PERSONAL COLLAGE -->
+        <section class="about-collage">
+
+            <div class="collage-photo collage-photo-large">
+                <img src="{{'/assets/images/trivoli_tavern.jpeg' | relative_url}}" alt="trivoli tavern">
+
+            </div>
+
+            <div class="collage-photo collage-photo-small">
+                <img src="{{'/assets/images/tour_de_chi.jpeg' | relative_url}}" alt="tour de chi group photo">
+
+            </div>
+
+            <div class="collage-photo collage-photo-medium">
+                <img src="{{'/assets/images/pickle_chi.jpeg' | relative_url}}" alt="grant park pickleball">
+
+            </div>
+
+            <div class="collage-caption">
+                <span class="caption-number">01</span>
+
+                <!-- <p>
+                    Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit.
+                </p> -->
+            </div>
+
+            <div class="collage-story">
+
+                <p class="eyebrow">
+                    Recently...
+                </p>
+
+                <h2>
+                    Eating, biking, and exploring through Chicago!
+                </h2>
+
+                <p>
+                    I lived here while working my recent summer internship
+                    with Humana and saw the city with my hometown and internship friends.
+                    Add me on <span style="font-weight: bold;">Beli @jamiesBLDs</span> to check out my favorite bites!
+                </p>
+
+                <p>
+                    Here are highlights from Trivoli Tavern (top), Grant Park pickleball courts (left),
+                    and Tour de Chi (right).
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- FUN FACTS -->
+        <section class="fun-facts">
+
+            <div class="section-heading reveal">
+
+                <p class="eyebrow">
+                    <!-- A FEW THINGS ABOUT ME -->
+                </p>
+
+                <h2>
+                    Some snapshots of my life
+                </h2>
+
+            </div>
+
+            <div class="facts-grid">
+
+                <!-- FACT 01 -->
+                <div class="fact-card fact-card-photo reveal">
+
+                    <div class="fact-image">
+                        <img src="{{'/assets/images/cincy_open.jpeg' | relative_url}}" alt="cincy open">
+                    </div>
+
+                    <div class="fact-content">
+                        <span class="fact-number">01</span>
+
+                        <h3>
+                            2026 Cincinnati Open
+                        </h3>
+
+                        <p>
+                            I love watching tennis and attended my first 1000 tournament in August during
+                            the round of 16 and I'm absolutely returning next year. Here's my view from
+                            centre court!
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- FACT 02 -->
+                <div class="fact-card fact-card-photo reveal">
+
+                    <div class="fact-image">
+                        <img src="{{'/assets/images/rex.JPG' | relative_url }}" alt="rex bunny">
+
+                    </div>
+
+                    <div class="fact-content">
+                        <span class="fact-number">02</span>
+
+                        <h3>Rex</h3>
+
+                        <p>
+                            Rex is the family bunny and we got him from the Columbus Humane Society shelter
+                            when he was really young. He's a Holland Lop and Dutch mix (he has black pants
+                            and white socks)!
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- FACT 03 -->
+                <div class="fact-card fact-card-photo reveal">
+
+                    <div class="fact-image">
+                        <img src="{{ '/assets/images/roosevelt_coffee.jpg' | relative_url }}" alt="Cold brew">
+                    </div>
+
+                    <div class="fact-content">
+                        <span class="fact-number">03</span>
+
+                        <h3>
+                            Coffee
+                        </h3>
+
+                        <p>
+                            My order rotates between a flat white, cortado, or cold brew.
+                            I've gotten into making cold brew at home
+                            but haven't been able to replicate Starbucks yet..
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CURRENTLY INTO -->
+        <section class="currently-section">
+
+            <div class="currently-label">
+                <p class="eyebrow">
+                    CURRENTLY INTO →
+                </p>
+            </div>
+
+            <div class="currently-list">
+                <span class="currently-pill">☕ Homemade cold brew</span>
+                <span class="currently-pill">🍲 Crockpot meals</span>
+                <span class="currently-pill">🎵 Adela</span>
+                <span class="currently-pill">🎙️ Good Hang with Amy Poehler</span>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+
+        <div class="footer-content">
+
+            <div>
+                <a href="{{ '/' | relative_url }}" class="logo">
+                    JAMIE LIAN
+                    <span class="logo-dot"></span>
+                </a>
+
+                <div class="footer-socials">
+                    <a href="https://www.linkedin.com/in/jamie-lian-iu" target="_blank" rel="noopener noreferrer">
+                        LinkedIn <span>↗</span>
+                    </a>
+
+                    <a href="mailto:jamielian12@gmail.com">
+                        jamielian12@gmail.com <span>↗</span>
+                    </a>
+                </div>
+            </div>
+
+            <p>© 2026 Jamie Lian</p>
+
+        </div>
+
+        <div class="footer-court-line"></div>
+
+    </footer>
+<script src="{{ '/assets/js/animations.js' | relative_url }}"></script>
+</body>
+
+</html>

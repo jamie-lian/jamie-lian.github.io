@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <title>Home · {{ site.title }}</title>
+
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+
+<body>
+
+  <!-- =========================
+       NAVIGATION
+       ========================= -->
+
+  <header class="site-header">
+    <nav class="navigation">
+
+      <a href="{{ '/' | relative_url }}" class="logo">
+        JAMIE LIAN <span class="logo-dot"></span>
+      </a>
+
+      <div class="nav-links">
+        <a href="{{ '/' | relative_url }}" class="active">HOME</a>
+        <a href="{{ '/resume' | relative_url }}">RESUME</a>
+        <a href="{{ '/about' | relative_url }}">ABOUT</a>
+      </div>
+
+    </nav>
+  </header>
+
+
+  <main>
+
+    <!-- =========================
+         HERO
+         ========================= -->
+    
+
+    <section class="hero">
+
+      <div class="hero-content page-intro">
+
+        <!-- <p class="eyebrow">WELCOME</p> -->
+
+        <h1>
+          Hi, I'm <span>Jamie.</span>
+        </h1>
+
+        <div class="hero-description">
+
+          <p>
+            I'm a senior at Indiana University Bloomington (GO HOOSIERS!) studying informatics with a human centered
+            computing
+            cognate and pursuing a certificate in accounting.
+          </p>
+
+          <p>
+            I interned at Humana for 2 summers on the Associate Technology Experience team.
+            On campus, I was involved in Luddy Consulting Association for 2 years and experienced
+            roles as a student consultant and project manager. Let's connect!
+
+          </p>
+
+        </div>
+
+        <div class="hero-links">
+          <a href="https://www.linkedin.com/in/jamie-lian-iu" class="text-link" target="_blank"
+            rel="noopener noreferrer">
+            <svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="currentColor"
+                d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V8.99h3.42v1.57h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.32 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.1 20.45H3.54V8.99H7.1v11.46z" />
+            </svg>
+
+            LinkedIn <span>↗</span>
+          </a>
+          <a href="mailto:jamielian12@gmail.com" class="text-link">jamielian12@gmail.com<span>↗</span></a>
+        </div>
+
+      </div>
+
+
+      <!-- Photo -->
+
+      <div class="hero-image-wrapper page-intro page-intro-delay">
+
+        <div class="court-line court-line-one"></div>
+        <div class="court-line court-line-two"></div>
+
+        <div class="photo-placeholder">
+          <img src="{{'/assets/images/jamie_headshot.jpeg' | relative_url}}" alt="Headshot of Jamie Lian">
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         FEATURED WORK
+         ========================= -->
+
+    <!-- =========================
+     FEATURED WORK
+     ========================= -->
+
+    <section class="work-section" id="work">
+
+      <div class="section-heading reveal">
+
+        <p class="eyebrow">FEATURED PROJECTS</p>
+
+        <h2>A few things I've worked on</h2>
+
+      </div>
+
+
+      <div class="projects-grid">
+
+
+        <!-- =========================
+         PROJECT 1
+         ========================= -->
+
+        <article class="project-card reveal">
+
+          <div class="project-image">
+            <img src="{{'/assets/images/dashboard_6.png' | relative_url}}" alt="Data visualization project preview">
+          </div>
+
+          <div class="project-content">
+
+            <button class="project-toggle" type="button" aria-expanded="false">
+
+              <div class="project-topline">
+
+                <span class="project-category">
+                  DATA VISUALIZATION / STORYTELLING
+                </span>
+
+                <span class="project-expand" aria-hidden="true">
+                  +
+                </span>
+
+              </div>
+
+              <h3>NYC Parks Community Impact Dashboard</h3>
+
+              <p>
+                Used a combination of capital project spend, demographic, open space, and support services
+                data to communicate how public spaces managed by NYC Parks impact New Yorkers
+              </p>
+
+            </button>
+
+
+            <div class="project-details">
+
+              <div class="project-details-inner">
+
+                <div class="project-detail-section">
+
+                  <span class="detail-label">
+                    OVERVIEW
+                  </span>
+
+                  <p>
+                    NYC Parks are responsible for over 30,000 acres of land and work to provide equitable
+                    and sustainable public spaces. The data story uses the 2023 American Community
+                    Services (ACS) and several NYC OpenData datasets to visualize and describe NYC communities
+                    , classification of spaces, resources allocated to maintenance, and funding activities. This project
+                    was completed during Spring of 2026 and has a supplemental data report detailing the key findings of
+                    the data story. The report references external studies and articles to provide context
+                    about the data.
+                  </p>
+
+                </div>
+
+
+                <div class="project-detail-section">
+
+                  <span class="detail-label">
+                    MY ROLE
+                  </span>
+
+                  <p>
+                    In this course, INFO-I 400 Visualizing Data with Tableau, I received class trainings and weekly
+                    exercises to build my knowledge and prepare for the semester final project. I worked independently
+                    to gather and review data sources, design the story layout, and write the data report.
+                  </p>
+
+                </div>
+
+
+                <div class="project-detail-section">
+
+                  <span class="detail-label">
+                    TOOLS
+                  </span>
+
+                  <p>
+                    Tableau
+                  </p>
+
+                </div>
+
+                <div class="project-links">
+                  <a href="https://public.tableau.com/shared/H2YRBY54X?:display_count=n&:origin=viz_share_link"
+                    class="project-link" target="_blank" rel="noopener noreferrer">
+                    VIEW PROJECT <span>↗</span>
+                  </a>
+
+                  <a href="https://1drv.ms/w/c/e45587da7fcebe1d/IQAn-GTVp2cZTpJM9xgdDRxmAZguTzlfaUlFq4npW-zOMQg?e=H2dHPz"
+                    class="project-link" target="_blank" rel="noopener noreferrer">
+                    DATA REPORT <span>↗</span>
+                  </a>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+
+        <!-- =========================
+         PROJECT 2
+         ========================= -->
+
+        <article class="project-card reveal">
+
+          <div class="project-image">
+            <img src="{{'/assets/images/Project 3 Geometric Illustration svg.svg' | relative_url}}"
+              alt="illustration project preview">
+          </div>
+
+          <div class="project-content">
+
+            <button class="project-toggle" type="button" aria-expanded="false">
+
+              <div class="project-topline">
+
+                <span class="project-category">
+                  CREATIVE
+                </span>
+
+                <span class="project-expand" aria-hidden="true">
+                  +
+                </span>
+
+              </div>
+
+              <h3>Geometric Landscape Illustration</h3>
+
+              <p>
+                Created a geometric landscape illustration of the Columbus, Ohio skyline
+                as part of a visual design course project
+              </p>
+
+            </button>
+
+
+            <div class="project-details">
+
+              <div class="project-details-inner">
+
+                <div class="project-detail-section">
+
+                  <span class="detail-label">
+                    OVERVIEW
+                  </span>
+
+                  <p>
+                    Sketched a rough draft of the landscape and used Adobe Illustrator to construct
+                    it out of geometric shapes, lines, and patterns to emphasize flat design principles.
+                    The geometric illustration is based on a skyline photo I took on the Rich St bridge
+                    over the Scioto River during sunset in early October 2025.
+                  </p>
+
+                </div>
+
+
+                <div class="project-detail-section">
+
+                  <span class="detail-label">
+                    MY ROLE
+                  </span>
+
+                  <p>
+                    In INFO-I 363 Visual Design for the Web, I completed an IU led Illustrator training course along
+                    with supplemental videos to learn the design software.
+                  </p>
+
+                </div>
+
+
+                <div class="project-detail-section">
+
+                  <span class="detail-label">
+                    TOOLS
+                  </span>
+
+                  <p>
+                    Adobe Illustrator
+                  </p>
+
+                </div>
+
+
+                <a href='/assets/pdfs/Project 3 Geometric Illustration_final copy.pdf' | relative_url
+                  class="project-link" target="_blank" rel="noopener noreferrer">
+                  VIEW PROJECT <span>↗</span>
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+
+        <!-- =========================
+         PROJECT 3
+         ========================= -->
+
+        <article class="project-card reveal">
+
+          <div class="project-image">
+            <img src="{{'/assets/images/hh_login.png' | relative_url}}" alt="hoosier hustle friends page">
+          </div>
+
+          <div class="project-content">
+
+            <button class="project-toggle" type="button" aria-expanded="false">
+
+              <div class="project-topline">
+
+                <span class="project-category">
+                  HUMAN CENTERED INTERACTION
+                </span>
+
+                <span class="project-expand" aria-hidden="true">
+                  +
+                </span>
+
+              </div>
+
+              <h3>Hoosier Hustle</h3>
+
+              <p>
+                Designed and developed a gamified app encouraging sustainable transportation practices
+                on campus through meal point rewards and friendly competition
+              </p>
+
+            </button>
+
+
+            <div class="project-details">
+
+              <div class="project-details-inner">
+
+                <div class="project-detail-section">
+
+                  <span class="detail-label">
+                    OVERVIEW
+                  </span>
+
+                  <p>
+                    Collaborated in a team of 4 to conduct primary and secondary research on urban mobility
+                    across Indiana University's campus through interviews uncovering traffic patterns and
+                    commuting behavior among students. We created and iterated low to high fidelity
+                    prototypes using Figma, incorporating feedback from user tests and heuristic evaluations
+                    to reduce friction and align with user needs.
+                  </p>
+
+                </div>
+
+
+                <div class="project-detail-section">
+
+                  <span class="detail-label">
+                    MY ROLE
+                  </span>
+
+                  <p>
+                    Responsible for interviewing 3 of the 12 students and creating slide decks for critique
+                    sessions among peers. Tasked with designing the third and fourth iteration of the Figma
+                    prototype.
+                  </p>
+
+                </div>
+
+
+                <div class="project-detail-section">
+
+                  <span class="detail-label">
+                    TOOLS
+                  </span>
+
+                  <p>
+                    Figma
+                  </p>
+
+                </div>
+
+                <div class="project-links">
+                  <a href="https://www.figma.com/proto/3fAwuB9Tct386nnwEjoWrp/I300-W9D1--wireframe-prototype--Copy-?node-id=386-1849&p=f&t=bou9sY9eLcW4tI71-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=386%3A1849"
+                    class="project-link" target="_blank" rel="noopener noreferrer">
+                    VIEW PROJECT <span>↗</span>
+                  </a>
+
+                  <a href='/assets/pdfs/Hoosier Hustle Pres (1).pdf' | relative_url class="project-link" target="_blank"
+                    rel="noopener noreferrer">VIEW POSTER SUBMISSION<span>↗</span>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+  <!-- =========================
+       FOOTER
+       ========================= -->
+
+  <footer class="site-footer">
+
+    <div class="footer-content">
+
+      <div>
+        <a href="{{ '/' | relative_url }}" class="logo">
+          JAMIE LIAN <span class="logo-dot"></span>
+        </a>
+
+        <div class="footer-socials">
+
+          <a href="https://www.linkedin.com/in/jamie-lian-iu" target="_blank" rel="noopener noreferrer">
+            LinkedIn <span>↗</span>
+          </a>
+
+          <a href="mailto:jamielian12@gmail.com">
+            jamielian12@gmail.com <span>↗</span>
+          </a>
+
+        </div>
+      </div>
+
+      <p>© 2026 Jamie Lian</p>
+
+    </div>
+
+    <div class="footer-court-line"></div>
+
+  </footer>
+
+<script src="{{ '/assets/js/projects.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/animations.js' | relative_url }}"></script>
+
+</body>
+
+</html>

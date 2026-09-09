@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>{{ page.title }} · {{ site.title }}</title>
+
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="site-header">
+    <nav class="navigation">
+
+      <a href="{{ '/' | relative_url }}" class="logo">
+        JAMIE LIAN
+        <span class="logo-dot"></span>
+      </a>
+
+      <div class="nav-links">
+        <a href="{{ '/' | relative_url }}">HOME</a>
+        <a href="{{ '/resume' | relative_url }}" class="active">RESUME</a>
+        <a href="{{ '/about' | relative_url }}">ABOUT</a>
+      </div>
+
+    </nav>
+  </header>
+
+
+  <main class="resume-page">
+
+    <section class="resume-split">
+
+      <!-- LEFT SIDE -->
+      <div class="resume-info page-intro">
+
+        <!-- <p class="eyebrow">
+          RESUME
+        </p> -->
+
+        <h1>
+          A look at my
+          <span>experience</span>
+        </h1>
+
+        <p class="resume-intro-text">
+          Updated September 2026. Preview or download my resume as a PDF.
+        </p>
+
+        <a class="resume-download" href='/assets/pdfs/Jamie_Lian_Resume_FA26.pdf' | relative_url download>
+          Download Resume ↘
+        </a>
+
+      </div>
+
+
+      <!-- RIGHT SIDE -->
+      <div class="resume-preview page-intro page-intro-delay">
+
+        <div class="resume-preview-header">
+
+          <!-- <p class="eyebrow">
+            RESUME PREVIEW
+          </p> -->
+
+          <!-- <span class="resume-preview-note">
+            PDF
+          </span> -->
+
+        </div>
+
+
+        <div class="resume-preview-placeholder">
+          <iframe src='/assets/pdfs/Jamie_Lian_Resume_FA26.pdf' | relative_url #view=Fit
+            title="Jamie Lian Resume"></iframe>
+
+        </div>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+
+    <div class="footer-content">
+
+      <div>
+        <a href="{{ '/' | relative_url }}" class="logo">
+          JAMIE LIAN
+          <span class="logo-dot"></span>
+        </a>
+
+        <div class="footer-socials">
+
+          <a href="https://www.linkedin.com/in/jamie-lian-iu" target="_blank" rel="noopener noreferrer">
+            LinkedIn <span>↗</span>
+          </a>
+
+          <a href="mailto:jamielian12@gmail.com">
+            jamielian12@gmail.com <span>↗</span>
+          </a>
+
+        </div>
+      </div>
+
+      <p>© 2026 Jamie Lian</p>
+
+    </div>
+
+    <div class="footer-court-line"></div>
+
+  </footer>
+<script src="{{ '/assets/js/animations.js' | relative_url }}"></script>
+</body>
+
+</html>
